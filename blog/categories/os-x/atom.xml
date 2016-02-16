@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Os X | David Lambl]]></title>
+  <link href="http://davidlambl.github.io/blog/categories/os-x/atom.xml" rel="self"/>
+  <link href="http://davidlambl.github.io/"/>
+  <updated>2016-02-15T22:14:17-05:00</updated>
+  <id>http://davidlambl.github.io/</id>
+  <author>
+    <name><![CDATA[David Lambl]]></name>
+    <email><![CDATA[david.lambl@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Invalid Active Developer Path on OS X After Installing Ruby]]></title>
+    <link href="http://davidlambl.github.io/blog/2015/02/24/invalid-active-developer-path-on-os-x-after-installing-ruby/"/>
+    <updated>2015-02-24T21:31:00-05:00</updated>
+    <id>http://davidlambl.github.io/blog/2015/02/24/invalid-active-developer-path-on-os-x-after-installing-ruby</id>
+    <content type="html"><![CDATA[<p>I was getting this error,</p>
+
+<pre><code>xcrun: error: invalid active developer path (/Applications/Xcode.app),
+missing xcrun at: /Applications/Xcode.app/usr/bin/xcrun
+</code></pre>
+
+<p><a href="http://stackoverflow.com/questions/14334708/xcrun-cant-find-xcode-path" target="_blank">This solution</a> worked, but the error occured again after closing my terminal and reopening it; I had to run the same commands every time I opened a new terminal window.</p>
+
+<p>I found a suggestion <a href="https://github.com/Homebrew/homebrew/issues/23500" target="_blank">here</a> which indicated,</p>
+
+<pre><code>sudo xcode-select -switch /
+</code></pre>
+
+<p>as the fix. However, this threw an error that the developer path was invalid.</p>
+
+<p>Instead, for me, I modified this to,</p>
+
+<pre><code>sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/
+</code></pre>
+
+<p>(which is a mixture of the two referenced solutions) and everything worked as expected!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node.js | David Lambl]]></title>
+  <link href="http://davidlambl.github.io/blog/categories/node-dot-js/atom.xml" rel="self"/>
+  <link href="http://davidlambl.github.io/"/>
+  <updated>2016-02-15T22:14:17-05:00</updated>
+  <id>http://davidlambl.github.io/</id>
+  <author>
+    <name><![CDATA[David Lambl]]></name>
+    <email><![CDATA[david.lambl@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Some Tips on Using Visual Studio Code and Node.js]]></title>
+    <link href="http://davidlambl.github.io/blog/2015/06/02/some-tips-on-using-visual-studio-code-and-node/"/>
+    <updated>2015-06-02T21:41:06-04:00</updated>
+    <id>http://davidlambl.github.io/blog/2015/06/02/some-tips-on-using-visual-studio-code-and-node</id>
+    <content type="html"><![CDATA[<p>As a .NET Developer who uses a Mac at home, <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> was pretty exciting <a href="http://www.hanselman.com/blog/IntroducingVisualStudioCodeForWindowsMacAndLinux.aspx" target="_blank">news</a> to me.</p>
+
+<p>Moreover, Node.js has been hot for awhile now, and I&rsquo;m still fairly ignorant to it,</p>
+
+<p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" target="_blank"><img src="/images/3.png"></a></p>
+
+<p>The gist of the talk in the screenshot above is that JavaScript is rapidly careening toward world domination on its wobbly wheels.</p>
+
+<p>And so, what a time to play with it!</p>
+
+<p>There are just a few tips I&rsquo;d like to point out here, should you decide to do the same,</p>
+
+<ul>
+<li>There are annoying permissions errors I encounted after simply installing Node.js and following <a href="https://code.visualstudio.com/Docs/nodejs" target="_blank">the Visual Studio Code walkthrough</a>, when trying to save. I thought I had outsmarted this by remembering how to &ldquo;sudo&rdquo; commands, but that just exacerbated my problems by continually pushing them further down the line. This blog post helped me: <a href="http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/" target="_blank">www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/</a></li>
+<li>I first missed the bit about adding Code to your .bash_profile under <a href="https://code.visualstudio.com/Docs/setup" target="_blank">the setup section</a>. This is a nice thing to do; check out this blog post for help with that: <a href="http://natelandau.com/my-mac-osx-bash_profile/" target="_blank">natelandau.com/my-mac-osx-bash_profile/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

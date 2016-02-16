@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[David Lambl]]></title>
-  <link href="http://davidlambl.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Visual Studio Code | David Lambl]]></title>
+  <link href="http://davidlambl.github.io/blog/categories/visual-studio-code/atom.xml" rel="self"/>
   <link href="http://davidlambl.github.io/"/>
   <updated>2016-02-15T22:14:17-05:00</updated>
   <id>http://davidlambl.github.io/</id>
@@ -26,7 +26,7 @@
 
 <p> This short list was the result of the research I did with the intent of the framework / library being that it would be best one <em>for me</em> to learn with; so no disrespect to any of the others. I chose Aurelia because I know that it is being used by another team at my company, and React and Angular are not; so that made that last bit a little bit easier!</p>
 
-<p> <img src="http://davidlambl.github.io/images/aurelia_logo.png"></p>
+<p> <img src="/images/aurelia_logo.png"></p>
 
 <p>So, now that I&rsquo;ve made my decision, it should be easy to just &lsquo;get started,&rsquo; no?</p>
 
@@ -38,17 +38,17 @@
 
 <p>Back to the &lsquo;Get Started&rsquo; app, I started out by building the project in Visual Studio Code, but I couldn&rsquo;t figure out what was causing these red squiggles, and I couldn&rsquo;t get over them.</p>
 
-<p><img src="http://davidlambl.github.io/images/codesquiggles.png"></p>
+<p><img src="/images/codesquiggles.png"></p>
 
 <p>The error says that &ldquo;This can only be used in ts files,&rdquo; which would seem to indicate that the syntax is TypeScript specific, and not vanilla JavaScript. However, I <em>think</em> that it is? It&rsquo;s from the Aurelia walkthrough, nothing that I wrote. It&rsquo;s ES6 (ECMAScript2015), so maybe that&rsquo;s the problem? But no, it can&rsquo;t be, because Code supports ES6. Code <em>is</em> still in pre-release, so I don&rsquo;t want to spend too much time tracking this down, as it may very well be due to that.</p>
 
 <p>After some consideration, I thought, well, why hang on at all anymore? I may as well just jump in. So, I closed my project out from Code and opened it back up in <a href="https://atom.io/" target="_blank">Atom</a>,</p>
 
-<p><img src="http://davidlambl.github.io/images/atom.png"></p>
+<p><img src="/images/atom.png"></p>
 
 <p>Now, I&rsquo;ve got a working Aurelia Hello World. Magnificent!</p>
 
-<p><img src="http://davidlambl.github.io/images/helloaurelia.png"></p>
+<p><img src="/images/helloaurelia.png"></p>
 
 <p>My next step will be to try to push this to Azure. If I change course and try to push it to <a href="https://aws.amazon.com/" target="_blank">AWS</a> instead, then I&rsquo;ll know I&rsquo;ve <em>really</em> fell off the deep end.</p>
 ]]></content>
@@ -63,7 +63,7 @@
 
 <p>Moreover, Node.js has been hot for awhile now, and I&rsquo;m still fairly ignorant to it,</p>
 
-<p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" target="_blank"><img src="http://davidlambl.github.io/images/3.png"></a></p>
+<p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" target="_blank"><img src="/images/3.png"></a></p>
 
 <p>The gist of the talk in the screenshot above is that JavaScript is rapidly careening toward world domination on its wobbly wheels.</p>
 
@@ -76,68 +76,6 @@
 <li>I first missed the bit about adding Code to your .bash_profile under <a href="https://code.visualstudio.com/Docs/setup" target="_blank">the setup section</a>. This is a nice thing to do; check out this blog post for help with that: <a href="http://natelandau.com/my-mac-osx-bash_profile/" target="_blank">natelandau.com/my-mac-osx-bash_profile/</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Invalid Active Developer Path on OS X After Installing Ruby]]></title>
-    <link href="http://davidlambl.github.io/blog/2015/02/24/invalid-active-developer-path-on-os-x-after-installing-ruby/"/>
-    <updated>2015-02-24T21:31:00-05:00</updated>
-    <id>http://davidlambl.github.io/blog/2015/02/24/invalid-active-developer-path-on-os-x-after-installing-ruby</id>
-    <content type="html"><![CDATA[<p>I was getting this error,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>xcrun: error: invalid active developer path (/Applications/Xcode.app),
-</span><span class='line'>missing xcrun at: /Applications/Xcode.app/usr/bin/xcrun</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="http://stackoverflow.com/questions/14334708/xcrun-cant-find-xcode-path" target="_blank">This solution</a> worked, but the error occured again after closing my terminal and reopening it; I had to run the same commands every time I opened a new terminal window.</p>
-
-<p>I found a suggestion <a href="https://github.com/Homebrew/homebrew/issues/23500" target="_blank">here</a> which indicated,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo xcode-select -switch /</span></code></pre></td></tr></table></div></figure>
-
-
-<p>as the fix. However, this threw an error that the developer path was invalid.</p>
-
-<p>Instead, for me, I modified this to,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(which is a mixture of the two referenced solutions) and everything worked as expected!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress Is an Awfully Fun Blogging Engine]]></title>
-    <link href="http://davidlambl.github.io/blog/2015/01/29/octopress-is-an-awfully-fun-blogging-engine/"/>
-    <updated>2015-01-29T22:34:00-05:00</updated>
-    <id>http://davidlambl.github.io/blog/2015/01/29/octopress-is-an-awfully-fun-blogging-engine</id>
-    <content type="html"><![CDATA[<p>This is my first time writing a blog using markdown, and Octopress makes this pretty great.</p>
-
-<p><img src="http://davidlambl.github.io/images/1.png"></p>
-
-<p>I like it, because it has the feel of writing and compiling code to it, but the product is a blog post.</p>
-
-<p>For instance, after I finish writing the markdown from the screenshot above, I’ll simply run,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://davidlambl.github.io/images/2.png"></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<p>and - wallah! - new blog post!</p>
-
-<p>I think this is the beginning of a beautiful friendship :)</p>
 ]]></content>
   </entry>
   
