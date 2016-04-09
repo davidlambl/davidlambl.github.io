@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Azure | David Lambl]]></title>
+  <link href="http://davidlambl.github.io/blog/categories/azure/atom.xml" rel="self"/>
+  <link href="http://davidlambl.github.io/"/>
+  <updated>2016-04-09T00:43:22-04:00</updated>
+  <id>http://davidlambl.github.io/</id>
+  <author>
+    <name><![CDATA[David Lambl]]></name>
+    <email><![CDATA[david.lambl@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Started With Aurelia's 'Get Started']]></title>
+    <link href="http://davidlambl.github.io/blog/2015/10/08/getting-started-with-aurelias-get-started/"/>
+    <updated>2015-10-08T21:20:56-04:00</updated>
+    <id>http://davidlambl.github.io/blog/2015/10/08/getting-started-with-aurelias-get-started</id>
+    <content type="html"><![CDATA[<p>Though I&rsquo;m a <a href="http://stackoverflow.com/cv/davidlambl" target="_blank">fairly experienced Microsoft developer</a>, I&rsquo;m only just starting to leave the comforts of Visual Studio and trying to become more of a <a href="http://blogs.msdn.com/b/thebeebs/archive/2012/04/01/the-rise-of-the-t-shaped-developer.aspx" target="_blank">T-Shaped developer</a>.</p>
+
+<p>My desire, and goal, is to become more proficient in JavaScript. There are several reasons for this, but the most prominent for me are: my enthusiasm for web development, the proliferation of the community, and, also, really, the bridges being built to it from the Microsoft ecosystem as established by such things as TypeScript and Visual Studio Code.</p>
+
+<p>I decided to <a href="http://aurelia.io/get-started.html" target="_blank">get started with Aurelia</a>. There are a lot of JavaScript frameworks and libraries to choose from, and I had narrowed my list down to: Angular, React and Aurelia. I viewed this as an accomplishment, considering that there are others like Ember, Knockout, or even Angular 2 vs. Angular 1, and so on.</p>
+
+<p> This short list was the result of the research I did with the intent of the framework / library being that it would be best one <em>for me</em> to learn with; so no disrespect to any of the others. I chose Aurelia because I know that it is being used by another team at my company, and React and Angular are not; so that made that last bit a little bit easier!</p>
+
+<p> <img src="/images/aurelia_logo.png"></p>
+
+<p>So, now that I&rsquo;ve made my decision, it should be easy to just &lsquo;get started,&rsquo; no?</p>
+
+<p>Well, really, no. No, not for me. I&rsquo;m new to this. It&rsquo;s not like learning ASP.NET MVC after already knowing ASP.NET Web Forms, or even, for me, the jump from Java to C#. I&rsquo;m seeing words like &lsquo;npm,&rsquo; &lsquo;gulp,&rsquo; &lsquo;jspm,&rsquo; and I&rsquo;m on a Mac! Ah! What is all of this?</p>
+
+<p>I&rsquo;ve learned. <a href="https://www.npmjs.com/" target="_blank">npm</a> is Node Package Manager, <a href="http://brandonclapp.com/what-is-gulp-js-and-why-use-it/" target="_blank">gulp</a> automates development tasks, jspm is JavaScript package manager which, <a href="http://odetocode.com/blogs/scott/archive/2015/02/18/using-jspm-with-visual-studio-2015-and-asp-net-5.aspx" target="_blank">from Scott Allen</a>, &ldquo;.. combines package management with module loading infrastructure and transpilers to provide a magical experience.&rdquo;</p>
+
+<p>My point here is that, if you are in a situation similar to mine, while all of these new terms and tools may cause initial panic, we can learn &ndash; don&rsquo;t feel bad about being a newbie :) I really felt that <a href="http://www.pluralsight.com/author/julie-lerman" target="_blank">Julie Lerman</a> conveyed this sentiment well in <a href="http://dotnetrocks.com/default.aspx?showNum=1180" target="_blank">an interview</a> she did on <a href="http://dotnetrocks.com/" target="_blank">.NET Rocks!</a> (which is a fantastic podcast, by the way, and I highly recommended checking it out if you haven&rsquo;t already). She&rsquo;s a Microsoft MVP and a Pluralsight author, and, as she says in her interview, she too had to work from the ground up in getting started in this new world, and that honesty and lack of arrogance was inspirational to me.</p>
+
+<p>Back to the &lsquo;Get Started&rsquo; app, I started out by building the project in Visual Studio Code, but I couldn&rsquo;t figure out what was causing these red squiggles, and I couldn&rsquo;t get over them.</p>
+
+<p><img src="/images/codesquiggles.png"></p>
+
+<p>The error says that &ldquo;This can only be used in ts files,&rdquo; which would seem to indicate that the syntax is TypeScript specific, and not vanilla JavaScript. However, I <em>think</em> that it is? It&rsquo;s from the Aurelia walkthrough, nothing that I wrote. It&rsquo;s ES6 (ECMAScript2015), so maybe that&rsquo;s the problem? But no, it can&rsquo;t be, because Code supports ES6. Code <em>is</em> still in pre-release, so I don&rsquo;t want to spend too much time tracking this down, as it may very well be due to that.</p>
+
+<p>After some consideration, I thought, well, why hang on at all anymore? I may as well just jump in. So, I closed my project out from Code and opened it back up in <a href="https://atom.io/" target="_blank">Atom</a>,</p>
+
+<p><img src="/images/atom.png"></p>
+
+<p>Now, I&rsquo;ve got a working Aurelia Hello World. Magnificent!</p>
+
+<p><img src="/images/helloaurelia.png"></p>
+
+<p>My next step will be to try to push this to Azure. If I change course and try to push it to <a href="https://aws.amazon.com/" target="_blank">AWS</a> instead, then I&rsquo;ll know I&rsquo;ve <em>really</em> fell off the deep end.</p>
+]]></content>
+  </entry>
+  
+</feed>
